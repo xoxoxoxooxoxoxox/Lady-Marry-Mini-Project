@@ -15,6 +15,10 @@
 		3221DA8A1D136D9A00F5DC74 /* littleBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DA891D136D9A00F5DC74 /* littleBirdTests.swift */; };
 		3221DA951D136D9A00F5DC74 /* littleBirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DA941D136D9A00F5DC74 /* littleBirdUITests.swift */; };
 		3221DAA41D13743500F5DC74 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DAA31D13743500F5DC74 /* BorderedButton.swift */; };
+		3221DAB01D13A40000F5DC74 /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DAAF1D13A40000F5DC74 /* TwitterAuthViewController.swift */; };
+		3221DAB21D13AD0600F5DC74 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DAB11D13AD0600F5DC74 /* TwitterClient.swift */; };
+		3221DAB41D13AD8200F5DC74 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DAB31D13AD8200F5DC74 /* TwitterConstants.swift */; };
+		3221DAB61D13B50700F5DC74 /* TwitterConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DAB51D13B50700F5DC74 /* TwitterConvenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		3221DA941D136D9A00F5DC74 /* littleBirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littleBirdUITests.swift; sourceTree = "<group>"; };
 		3221DA961D136D9A00F5DC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3221DAA31D13743500F5DC74 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		3221DAAF1D13A40000F5DC74 /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAuthViewController.swift; sourceTree = "<group>"; };
+		3221DAB11D13AD0600F5DC74 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		3221DAB31D13AD8200F5DC74 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
+		3221DAB51D13B50700F5DC74 /* TwitterConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConvenience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				3221DA741D136D9A00F5DC74 /* AppDelegate.swift */,
+				3221DAAC1D13A2CF00F5DC74 /* Model */,
 				3221DAA51D13743B00F5DC74 /* View */,
 				3221DAA21D1373F300F5DC74 /* Controller */,
 				3221DAA71D13751300F5DC74 /* Assets */,
@@ -158,6 +167,33 @@
 				3221DA7D1D136D9A00F5DC74 /* LaunchScreen.storyboard */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		3221DAAA1D13A2BF00F5DC74 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				3221DAAF1D13A40000F5DC74 /* TwitterAuthViewController.swift */,
+				3221DAB11D13AD0600F5DC74 /* TwitterClient.swift */,
+				3221DAB31D13AD8200F5DC74 /* TwitterConstants.swift */,
+				3221DAB51D13B50700F5DC74 /* TwitterConvenience.swift */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+		3221DAAB1D13A2C800F5DC74 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				3221DAAA1D13A2BF00F5DC74 /* Twitter */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+		3221DAAC1D13A2CF00F5DC74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3221DAAB1D13A2C800F5DC74 /* Clients */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3221DAB21D13AD0600F5DC74 /* TwitterClient.swift in Sources */,
 				3221DA771D136D9A00F5DC74 /* LoginViewController.swift in Sources */,
 				3221DA751D136D9A00F5DC74 /* AppDelegate.swift in Sources */,
+				3221DAB01D13A40000F5DC74 /* TwitterAuthViewController.swift in Sources */,
+				3221DAB61D13B50700F5DC74 /* TwitterConvenience.swift in Sources */,
 				3221DAA41D13743500F5DC74 /* BorderedButton.swift in Sources */,
+				3221DAB41D13AD8200F5DC74 /* TwitterConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +561,7 @@
 				3221DA9B1D136D9A00F5DC74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3221DA9C1D136D9A00F5DC74 /* Build configuration list for PBXNativeTarget "littleBirdTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +570,7 @@
 				3221DA9E1D136D9A00F5DC74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3221DA9F1D136D9A00F5DC74 /* Build configuration list for PBXNativeTarget "littleBirdUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +579,7 @@
 				3221DAA11D136D9A00F5DC74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

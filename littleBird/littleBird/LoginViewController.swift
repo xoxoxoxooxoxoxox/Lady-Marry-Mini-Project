@@ -11,16 +11,32 @@ import UIKit
 class LoginViewController: UIViewController {
 
     // MARK: Properties
-    
     @IBOutlet weak var debugTextLabel: UILabel!
     @IBOutlet weak var loginButton: BorderedButton!
     
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         print("LoginViewController viewDidLoad Called")
         super.viewDidLoad()
     }
 
+    override func viewDidAppear(animated: Bool) {
+        print("LoginViewController viewDidAppear Called")
+        super.viewWillAppear(animated)
+        debugTextLabel.text = ""
+    }
     
+    // MARK: Action
+    @IBAction func loginPressed(sender: AnyObject) {
+        print("login Pressed")
+        TwitterClient.sharedInstance().authenticateViaMobileSign(self) { (success, errorString) in
+            
+        }
+    }
+    
+    
+    // MARK: Login
 
 
 }

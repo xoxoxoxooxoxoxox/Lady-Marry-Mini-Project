@@ -43,9 +43,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" title="Authenticate with Twitter">
+                                        <state key="normal" title="Sign in with Twitter">
                                             <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxt-gc-TA8"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip4-Si-iPa">
                                         <rect key="frame" x="0.0" y="249" width="560" height="256"/>
@@ -72,6 +75,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="349"/>
+        </scene>
+        <!--Twitter Auth View Controller-->
+        <scene sceneID="Tqe-Bo-uo6">
+            <objects>
+                <viewController storyboardIdentifier="TwitterAuthViewController" id="hGo-GT-X73" customClass="TwitterAuthViewController" customModule="littleBird" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8BP-uw-HLH"/>
+                        <viewControllerLayoutGuide type="bottom" id="H49-22-ACR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nWm-4i-4LH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSS-h1-Xad">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OSS-h1-Xad" firstAttribute="leading" secondItem="nWm-4i-4LH" secondAttribute="leading" id="PIL-qY-5dY"/>
+                            <constraint firstItem="OSS-h1-Xad" firstAttribute="top" secondItem="nWm-4i-4LH" secondAttribute="top" id="ee7-Lq-tZc"/>
+                            <constraint firstAttribute="trailing" secondItem="OSS-h1-Xad" secondAttribute="trailing" id="gud-U0-eGN"/>
+                            <constraint firstItem="H49-22-ACR" firstAttribute="top" secondItem="OSS-h1-Xad" secondAttribute="bottom" id="mxV-2t-PHK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="OSS-h1-Xad" id="Aiv-LG-tnL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lek-Ea-VwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="1052"/>
         </scene>
     </scenes>
     <resources>
