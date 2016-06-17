@@ -21,6 +21,7 @@ class TwitterAuthViewController: UIViewController {
     override func viewDidLoad() {
         print("TwitterAuthViewController viewDidLoad Called")
         super.viewDidLoad()
+        
         navigationItem.title = "Authentication"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: #selector(cancelAuth))
     }
@@ -45,8 +46,8 @@ class TwitterAuthViewController: UIViewController {
 extension TwitterAuthViewController: UIWebViewDelegate {
     
     func webViewDidFinishLoad(webView: UIWebView) {
-        
-        if webView.request!.URL!.absoluteString == "https://api.twitter.com/oauth2/token" {
+        print("webViewDidFinishLoad Called")
+        if webView.request!.URL!.absoluteString == " " {
             
             dismissViewControllerAnimated(true) {
                 self.completionHandlerForView!(success: true, errorString: nil)

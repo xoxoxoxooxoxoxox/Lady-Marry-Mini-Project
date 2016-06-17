@@ -15,6 +15,7 @@ extension TwitterClient {
     
     func authenticateViaMobileSign(hostViewController: UIViewController, completionHandlerForAuth: (success: Bool, errorString: String?) -> Void) {
         print("authenticateViaMobileSign Called")
+        
         let authorizationURL = NSURL(string: "\(TwitterClient.Constants.SignInWithTwitterURL)")
         let request = NSURLRequest(URL: authorizationURL!)
         let webAuthViewController = hostViewController.storyboard!.instantiateViewControllerWithIdentifier("TwitterAuthViewController") as! TwitterAuthViewController
@@ -24,4 +25,5 @@ extension TwitterClient {
         webAuthNavigationController.pushViewController(webAuthViewController, animated: false)
         hostViewController.presentViewController(webAuthNavigationController, animated: true, completion: nil)
     }
+    
 }
