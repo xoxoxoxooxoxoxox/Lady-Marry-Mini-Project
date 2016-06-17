@@ -98,10 +98,6 @@
 		3221DA681D136D9A00F5DC74 = {
 			isa = PBXGroup;
 			children = (
-				3221DAB81D14A02B00F5DC74 /* Fabric.framework */,
-				3221DAB91D14A02B00F5DC74 /* TwitterKit.framework */,
-				3221DABA1D14A02B00F5DC74 /* TwitterKitResources.bundle */,
-				3221DABB1D14A02B00F5DC74 /* TwitterCore.framework */,
 				3221DA731D136D9A00F5DC74 /* littleBird */,
 				3221DA881D136D9A00F5DC74 /* littleBirdTests */,
 				3221DA931D136D9A00F5DC74 /* littleBirdUITests */,
@@ -128,6 +124,7 @@
 				3221DAA21D1373F300F5DC74 /* Controller */,
 				3221DAA71D13751300F5DC74 /* Assets */,
 				3221DAA61D13750700F5DC74 /* Supporting Files */,
+				3221DAC01D14A2C400F5DC74 /* Frameworks */,
 			);
 			path = littleBird;
 			sourceTree = "<group>";
@@ -209,6 +206,18 @@
 				3221DAAB1D13A2C800F5DC74 /* Clients */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		3221DAC01D14A2C400F5DC74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3221DAB81D14A02B00F5DC74 /* Fabric.framework */,
+				3221DAB91D14A02B00F5DC74 /* TwitterKit.framework */,
+				3221DABA1D14A02B00F5DC74 /* TwitterKitResources.bundle */,
+				3221DABB1D14A02B00F5DC74 /* TwitterCore.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
