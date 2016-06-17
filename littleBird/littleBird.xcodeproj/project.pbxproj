@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3221DA751D136D9A00F5DC74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DA741D136D9A00F5DC74 /* AppDelegate.swift */; };
-		3221DA771D136D9A00F5DC74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DA761D136D9A00F5DC74 /* ViewController.swift */; };
+		3221DA771D136D9A00F5DC74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DA761D136D9A00F5DC74 /* LoginViewController.swift */; };
 		3221DA7A1D136D9A00F5DC74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3221DA781D136D9A00F5DC74 /* Main.storyboard */; };
 		3221DA7C1D136D9A00F5DC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3221DA7B1D136D9A00F5DC74 /* Assets.xcassets */; };
 		3221DA7F1D136D9A00F5DC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3221DA7D1D136D9A00F5DC74 /* LaunchScreen.storyboard */; };
 		3221DA8A1D136D9A00F5DC74 /* littleBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DA891D136D9A00F5DC74 /* littleBirdTests.swift */; };
 		3221DA951D136D9A00F5DC74 /* littleBirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DA941D136D9A00F5DC74 /* littleBirdUITests.swift */; };
+		3221DAA41D13743500F5DC74 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DAA31D13743500F5DC74 /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		3221DA711D136D9A00F5DC74 /* littleBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littleBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3221DA741D136D9A00F5DC74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3221DA761D136D9A00F5DC74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3221DA761D136D9A00F5DC74 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3221DA791D136D9A00F5DC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3221DA7B1D136D9A00F5DC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3221DA7E1D136D9A00F5DC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		3221DA901D136D9A00F5DC74 /* littleBirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littleBirdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3221DA941D136D9A00F5DC74 /* littleBirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littleBirdUITests.swift; sourceTree = "<group>"; };
 		3221DA961D136D9A00F5DC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3221DAA31D13743500F5DC74 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				3221DA741D136D9A00F5DC74 /* AppDelegate.swift */,
-				3221DA761D136D9A00F5DC74 /* ViewController.swift */,
-				3221DA781D136D9A00F5DC74 /* Main.storyboard */,
-				3221DA7B1D136D9A00F5DC74 /* Assets.xcassets */,
-				3221DA7D1D136D9A00F5DC74 /* LaunchScreen.storyboard */,
-				3221DA801D136D9A00F5DC74 /* Info.plist */,
+				3221DAA51D13743B00F5DC74 /* View */,
+				3221DAA21D1373F300F5DC74 /* Controller */,
+				3221DAA71D13751300F5DC74 /* Assets */,
+				3221DAA61D13750700F5DC74 /* Supporting Files */,
 			);
 			path = littleBird;
 			sourceTree = "<group>";
@@ -123,6 +124,40 @@
 				3221DA961D136D9A00F5DC74 /* Info.plist */,
 			);
 			path = littleBirdUITests;
+			sourceTree = "<group>";
+		};
+		3221DAA21D1373F300F5DC74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3221DA761D136D9A00F5DC74 /* LoginViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3221DAA51D13743B00F5DC74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3221DAA31D13743500F5DC74 /* BorderedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3221DAA61D13750700F5DC74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3221DA801D136D9A00F5DC74 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3221DAA71D13751300F5DC74 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3221DA7B1D136D9A00F5DC74 /* Assets.xcassets */,
+				3221DA781D136D9A00F5DC74 /* Main.storyboard */,
+				3221DA7D1D136D9A00F5DC74 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3221DA771D136D9A00F5DC74 /* ViewController.swift in Sources */,
+				3221DA771D136D9A00F5DC74 /* LoginViewController.swift in Sources */,
 				3221DA751D136D9A00F5DC74 /* AppDelegate.swift in Sources */,
+				3221DAA41D13743500F5DC74 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
