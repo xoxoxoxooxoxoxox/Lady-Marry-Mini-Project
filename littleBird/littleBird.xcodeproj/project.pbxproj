@@ -46,10 +46,10 @@
 		3221DA7B1D136D9A00F5DC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3221DA7E1D136D9A00F5DC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3221DA801D136D9A00F5DC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3221DA851D136D9A00F5DC74 /* littleBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littleBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3221DA851D136D9A00F5DC74 /* littleBird.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littleBird.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3221DA891D136D9A00F5DC74 /* littleBirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littleBirdTests.swift; sourceTree = "<group>"; };
 		3221DA8B1D136D9A00F5DC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3221DA901D136D9A00F5DC74 /* littleBirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littleBirdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3221DA901D136D9A00F5DC74 /* littleBird.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littleBird.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3221DA941D136D9A00F5DC74 /* littleBirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littleBirdUITests.swift; sourceTree = "<group>"; };
 		3221DA961D136D9A00F5DC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3221DAA31D13743500F5DC74 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				3221DA711D136D9A00F5DC74 /* littleBird.app */,
-				3221DA851D136D9A00F5DC74 /* littleBirdTests.xctest */,
-				3221DA901D136D9A00F5DC74 /* littleBirdUITests.xctest */,
+				3221DA851D136D9A00F5DC74 /* littleBird.xctest */,
+				3221DA901D136D9A00F5DC74 /* littleBird.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 			);
 			name = littleBirdTests;
 			productName = littleBirdTests;
-			productReference = 3221DA851D136D9A00F5DC74 /* littleBirdTests.xctest */;
+			productReference = 3221DA851D136D9A00F5DC74 /* littleBird.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3221DA8F1D136D9A00F5DC74 /* littleBirdUITests */ = {
@@ -258,7 +258,7 @@
 			);
 			name = littleBirdUITests;
 			productName = littleBirdUITests;
-			productReference = 3221DA901D136D9A00F5DC74 /* littleBirdUITests.xctest */;
+			productReference = 3221DA901D136D9A00F5DC74 /* littleBird.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -494,7 +494,7 @@
 				INFOPLIST_FILE = littleBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.littleBird";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = littleBird;
 			};
 			name = Debug;
 		};
@@ -509,7 +509,7 @@
 				INFOPLIST_FILE = littleBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.littleBird";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = littleBird;
 			};
 			name = Release;
 		};
@@ -520,7 +520,7 @@
 				INFOPLIST_FILE = littleBirdTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.littleBirdTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = littleBird;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/littleBird.app/littleBird";
 			};
 			name = Debug;
@@ -532,7 +532,7 @@
 				INFOPLIST_FILE = littleBirdTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.littleBirdTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = littleBird;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/littleBird.app/littleBird";
 			};
 			name = Release;
@@ -543,7 +543,7 @@
 				INFOPLIST_FILE = littleBirdUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.littleBirdUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = littleBird;
 				TEST_TARGET_NAME = littleBird;
 			};
 			name = Debug;
@@ -554,7 +554,7 @@
 				INFOPLIST_FILE = littleBirdUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.littleBirdUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = littleBird;
 				TEST_TARGET_NAME = littleBird;
 			};
 			name = Release;

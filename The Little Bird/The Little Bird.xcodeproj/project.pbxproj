@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327A03B91D151E0400436825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03B81D151E0400436825 /* AppDelegate.swift */; };
+		327A03BB1D151E0400436825 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03BA1D151E0400436825 /* LoginViewController.swift */; };
+		327A03BE1D151E0400436825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A03BC1D151E0400436825 /* Main.storyboard */; };
+		327A03C01D151E0400436825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327A03BF1D151E0400436825 /* Assets.xcassets */; };
+		327A03C31D151E0400436825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A03C11D151E0400436825 /* LaunchScreen.storyboard */; };
+		327A03CE1D151E0400436825 /* The_Little_BirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03CD1D151E0400436825 /* The_Little_BirdTests.swift */; };
+		327A03D91D151E0400436825 /* The_Little_BirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */; };
+		327A03EA1D151E2A00436825 /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E61D151E2A00436825 /* TwitterAuthViewController.swift */; };
+		327A03EB1D151E2A00436825 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E71D151E2A00436825 /* TwitterClient.swift */; };
+		327A03EC1D151E2A00436825 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E81D151E2A00436825 /* TwitterConstants.swift */; };
+		327A03ED1D151E2A00436825 /* TwitterConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E91D151E2A00436825 /* TwitterConvenience.swift */; };
+		327A03F21D151E5F00436825 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03F11D151E5F00436825 /* BorderedButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327A03CA1D151E0400436825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327A03AD1D151E0300436825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327A03B41D151E0400436825;
+			remoteInfo = "The Little Bird";
+		};
+		327A03D51D151E0400436825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327A03AD1D151E0300436825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327A03B41D151E0400436825;
+			remoteInfo = "The Little Bird";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		327A03B51D151E0400436825 /* The Little Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Little Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327A03B81D151E0400436825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		327A03BA1D151E0400436825 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		327A03BD1D151E0400436825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		327A03BF1D151E0400436825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327A03C21D151E0400436825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		327A03C41D151E0400436825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327A03C91D151E0400436825 /* The Little BirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Little BirdTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327A03CD1D151E0400436825 /* The_Little_BirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Little_BirdTests.swift; sourceTree = "<group>"; };
+		327A03CF1D151E0400436825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327A03D41D151E0400436825 /* The Little BirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Little BirdUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Little_BirdUITests.swift; sourceTree = "<group>"; };
+		327A03DA1D151E0400436825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327A03E61D151E2A00436825 /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterAuthViewController.swift; path = ../../littleBird/littleBird/TwitterAuthViewController.swift; sourceTree = "<group>"; };
+		327A03E71D151E2A00436825 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterClient.swift; path = ../../littleBird/littleBird/TwitterClient.swift; sourceTree = "<group>"; };
+		327A03E81D151E2A00436825 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterConstants.swift; path = ../../littleBird/littleBird/TwitterConstants.swift; sourceTree = "<group>"; };
+		327A03E91D151E2A00436825 /* TwitterConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterConvenience.swift; path = ../../littleBird/littleBird/TwitterConvenience.swift; sourceTree = "<group>"; };
+		327A03F11D151E5F00436825 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderedButton.swift; path = ../../littleBird/littleBird/BorderedButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327A03B21D151E0400436825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A03C61D151E0400436825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A03D11D151E0400436825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327A03AC1D151E0300436825 = {
+			isa = PBXGroup;
+			children = (
+				327A03B71D151E0400436825 /* The Little Bird */,
+				327A03CC1D151E0400436825 /* The Little BirdTests */,
+				327A03D71D151E0400436825 /* The Little BirdUITests */,
+				327A03B61D151E0400436825 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		327A03B61D151E0400436825 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327A03B51D151E0400436825 /* The Little Bird.app */,
+				327A03C91D151E0400436825 /* The Little BirdTests.xctest */,
+				327A03D41D151E0400436825 /* The Little BirdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327A03B71D151E0400436825 /* The Little Bird */ = {
+			isa = PBXGroup;
+			children = (
+				327A03B81D151E0400436825 /* AppDelegate.swift */,
+				327A03F01D151E4D00436825 /* Model */,
+				327A03F31D151E6800436825 /* View */,
+				327A03F61D151EBC00436825 /* Controller */,
+				327A03F41D151E7E00436825 /* Assets */,
+				327A03F51D151E9800436825 /* Supporting Files */,
+			);
+			path = "The Little Bird";
+			sourceTree = "<group>";
+		};
+		327A03CC1D151E0400436825 /* The Little BirdTests */ = {
+			isa = PBXGroup;
+			children = (
+				327A03CD1D151E0400436825 /* The_Little_BirdTests.swift */,
+				327A03CF1D151E0400436825 /* Info.plist */,
+			);
+			path = "The Little BirdTests";
+			sourceTree = "<group>";
+		};
+		327A03D71D151E0400436825 /* The Little BirdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */,
+				327A03DA1D151E0400436825 /* Info.plist */,
+			);
+			path = "The Little BirdUITests";
+			sourceTree = "<group>";
+		};
+		327A03EE1D151E3300436825 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				327A03E61D151E2A00436825 /* TwitterAuthViewController.swift */,
+				327A03E71D151E2A00436825 /* TwitterClient.swift */,
+				327A03E81D151E2A00436825 /* TwitterConstants.swift */,
+				327A03E91D151E2A00436825 /* TwitterConvenience.swift */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+		327A03EF1D151E3B00436825 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				327A03EE1D151E3300436825 /* Twitter */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		327A03F01D151E4D00436825 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327A03EF1D151E3B00436825 /* Client */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		327A03F31D151E6800436825 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327A03F11D151E5F00436825 /* BorderedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		327A03F41D151E7E00436825 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				327A03BC1D151E0400436825 /* Main.storyboard */,
+				327A03BF1D151E0400436825 /* Assets.xcassets */,
+				327A03C11D151E0400436825 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		327A03F51D151E9800436825 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				327A03C41D151E0400436825 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		327A03F61D151EBC00436825 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				327A03BA1D151E0400436825 /* LoginViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327A03B41D151E0400436825 /* The Little Bird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327A03DD1D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little Bird" */;
+			buildPhases = (
+				327A03B11D151E0400436825 /* Sources */,
+				327A03B21D151E0400436825 /* Frameworks */,
+				327A03B31D151E0400436825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Little Bird";
+			productName = "The Little Bird";
+			productReference = 327A03B51D151E0400436825 /* The Little Bird.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327A03C81D151E0400436825 /* The Little BirdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327A03E01D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdTests" */;
+			buildPhases = (
+				327A03C51D151E0400436825 /* Sources */,
+				327A03C61D151E0400436825 /* Frameworks */,
+				327A03C71D151E0400436825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327A03CB1D151E0400436825 /* PBXTargetDependency */,
+			);
+			name = "The Little BirdTests";
+			productName = "The Little BirdTests";
+			productReference = 327A03C91D151E0400436825 /* The Little BirdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		327A03D31D151E0400436825 /* The Little BirdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327A03E31D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdUITests" */;
+			buildPhases = (
+				327A03D01D151E0400436825 /* Sources */,
+				327A03D11D151E0400436825 /* Frameworks */,
+				327A03D21D151E0400436825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327A03D61D151E0400436825 /* PBXTargetDependency */,
+			);
+			name = "The Little BirdUITests";
+			productName = "The Little BirdUITests";
+			productReference = 327A03D41D151E0400436825 /* The Little BirdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327A03AD1D151E0300436825 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "CHIN-CHWEN TIEN";
+				TargetAttributes = {
+					327A03B41D151E0400436825 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZWUMSGQQ89;
+					};
+					327A03C81D151E0400436825 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZWUMSGQQ89;
+						TestTargetID = 327A03B41D151E0400436825;
+					};
+					327A03D31D151E0400436825 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZWUMSGQQ89;
+						TestTargetID = 327A03B41D151E0400436825;
+					};
+				};
+			};
+			buildConfigurationList = 327A03B01D151E0300436825 /* Build configuration list for PBXProject "The Little Bird" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327A03AC1D151E0300436825;
+			productRefGroup = 327A03B61D151E0400436825 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327A03B41D151E0400436825 /* The Little Bird */,
+				327A03C81D151E0400436825 /* The Little BirdTests */,
+				327A03D31D151E0400436825 /* The Little BirdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327A03B31D151E0400436825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A03C31D151E0400436825 /* LaunchScreen.storyboard in Resources */,
+				327A03C01D151E0400436825 /* Assets.xcassets in Resources */,
+				327A03BE1D151E0400436825 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A03C71D151E0400436825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A03D21D151E0400436825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327A03B11D151E0400436825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A03EC1D151E2A00436825 /* TwitterConstants.swift in Sources */,
+				327A03ED1D151E2A00436825 /* TwitterConvenience.swift in Sources */,
+				327A03EB1D151E2A00436825 /* TwitterClient.swift in Sources */,
+				327A03EA1D151E2A00436825 /* TwitterAuthViewController.swift in Sources */,
+				327A03BB1D151E0400436825 /* LoginViewController.swift in Sources */,
+				327A03B91D151E0400436825 /* AppDelegate.swift in Sources */,
+				327A03F21D151E5F00436825 /* BorderedButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A03C51D151E0400436825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A03CE1D151E0400436825 /* The_Little_BirdTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A03D01D151E0400436825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A03D91D151E0400436825 /* The_Little_BirdUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327A03CB1D151E0400436825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327A03B41D151E0400436825 /* The Little Bird */;
+			targetProxy = 327A03CA1D151E0400436825 /* PBXContainerItemProxy */;
+		};
+		327A03D61D151E0400436825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327A03B41D151E0400436825 /* The Little Bird */;
+			targetProxy = 327A03D51D151E0400436825 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		327A03BC1D151E0400436825 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327A03BD1D151E0400436825 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		327A03C11D151E0400436825 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327A03C21D151E0400436825 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327A03DB1D151E0400436825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		327A03DC1D151E0400436825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		327A03DE1D151E0400436825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Little Bird/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.The-Little-Bird";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		327A03DF1D151E0400436825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Little Bird/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.The-Little-Bird";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		327A03E11D151E0400436825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Little BirdTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.The-Little-BirdTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Little Bird.app/The Little Bird";
+			};
+			name = Debug;
+		};
+		327A03E21D151E0400436825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Little BirdTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.The-Little-BirdTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Little Bird.app/The Little Bird";
+			};
+			name = Release;
+		};
+		327A03E41D151E0400436825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "The Little BirdUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.The-Little-BirdUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "The Little Bird";
+			};
+			name = Debug;
+		};
+		327A03E51D151E0400436825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "The Little BirdUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.The-Little-BirdUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "The Little Bird";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327A03B01D151E0300436825 /* Build configuration list for PBXProject "The Little Bird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A03DB1D151E0400436825 /* Debug */,
+				327A03DC1D151E0400436825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327A03DD1D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little Bird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A03DE1D151E0400436825 /* Debug */,
+				327A03DF1D151E0400436825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327A03E01D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A03E11D151E0400436825 /* Debug */,
+				327A03E21D151E0400436825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327A03E31D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A03E41D151E0400436825 /* Debug */,
+				327A03E51D151E0400436825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327A03AD1D151E0300436825 /* Project object */;
+}

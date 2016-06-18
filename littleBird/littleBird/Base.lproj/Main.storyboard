@@ -27,7 +27,7 @@
                                             <constraint firstAttribute="height" constant="150" id="M6P-VG-ATS"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Little Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOK-nH-F6A">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="littleBird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOK-nH-F6A">
                                         <rect key="frame" x="0.0" y="150" width="560" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="nh0-OG-VxC"/>
