@@ -14,10 +14,6 @@
 		327A03C31D151E0400436825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A03C11D151E0400436825 /* LaunchScreen.storyboard */; };
 		327A03CE1D151E0400436825 /* The_Little_BirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03CD1D151E0400436825 /* The_Little_BirdTests.swift */; };
 		327A03D91D151E0400436825 /* The_Little_BirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */; };
-		327A03FC1D151FBF00436825 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327A03F81D151FBF00436825 /* Fabric.framework */; };
-		327A03FD1D151FBF00436825 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327A03F91D151FBF00436825 /* TwitterKit.framework */; };
-		327A03FE1D151FBF00436825 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 327A03FA1D151FBF00436825 /* TwitterKitResources.bundle */; };
-		327A03FF1D151FBF00436825 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327A03FB1D151FBF00436825 /* TwitterCore.framework */; };
 		327A04021D15228100436825 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04011D15228100436825 /* BorderedButton.swift */; };
 		327A04041D1522A300436825 /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04031D1522A300436825 /* TwitterAuthViewController.swift */; };
 		327A04061D1522C300436825 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04051D1522C300436825 /* TwitterClient.swift */; };
@@ -56,10 +52,6 @@
 		327A03D41D151E0400436825 /* The Little BirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Little BirdUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Little_BirdUITests.swift; sourceTree = "<group>"; };
 		327A03DA1D151E0400436825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		327A03F81D151FBF00436825 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
-		327A03F91D151FBF00436825 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
-		327A03FA1D151FBF00436825 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
-		327A03FB1D151FBF00436825 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 		327A04011D15228100436825 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		327A04031D1522A300436825 /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterAuthViewController.swift; path = ../TwitterAuthViewController.swift; sourceTree = "<group>"; };
 		327A04051D1522C300436825 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
@@ -72,9 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327A03FC1D151FBF00436825 /* Fabric.framework in Frameworks */,
-				327A03FF1D151FBF00436825 /* TwitterCore.framework in Frameworks */,
-				327A03FD1D151FBF00436825 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,10 +200,6 @@
 		327A04001D151FC800436825 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				327A03F81D151FBF00436825 /* Fabric.framework */,
-				327A03F91D151FBF00436825 /* TwitterKit.framework */,
-				327A03FA1D151FBF00436825 /* TwitterKitResources.bundle */,
-				327A03FB1D151FBF00436825 /* TwitterCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -327,7 +312,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327A03FE1D151FBF00436825 /* TwitterKitResources.bundle in Resources */,
 				327A03C31D151E0400436825 /* LaunchScreen.storyboard in Resources */,
 				327A03C01D151E0400436825 /* Assets.xcassets in Resources */,
 				327A03BE1D151E0400436825 /* Main.storyboard in Resources */,
