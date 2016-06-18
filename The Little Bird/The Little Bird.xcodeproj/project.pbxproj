@@ -15,10 +15,13 @@
 		327A03CE1D151E0400436825 /* The_Little_BirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03CD1D151E0400436825 /* The_Little_BirdTests.swift */; };
 		327A03D91D151E0400436825 /* The_Little_BirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */; };
 		327A04021D15228100436825 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04011D15228100436825 /* BorderedButton.swift */; };
-		327A04041D1522A300436825 /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04031D1522A300436825 /* TwitterAuthViewController.swift */; };
 		327A04061D1522C300436825 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04051D1522C300436825 /* TwitterClient.swift */; };
 		327A04081D1522CE00436825 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04071D1522CE00436825 /* TwitterConstants.swift */; };
 		327A040A1D1522D900436825 /* TwitterConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04091D1522D900436825 /* TwitterConvenience.swift */; };
+		32F3EDF71D15EFDA0049CDCB /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3EDF61D15EFDA0049CDCB /* TwitterAuthViewController.swift */; };
+		53483C5D5BC6C0FB76FB1A2A /* Pods_The_Little_BirdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC634315603631417F68B52 /* Pods_The_Little_BirdTests.framework */; };
+		6BB15376AD2A8270DCD5E78D /* Pods_The_Little_BirdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E6247B93C357AE41095698 /* Pods_The_Little_BirdUITests.framework */; };
+		AD80CB544C4BCB3E75A63053 /* Pods_The_Little_Bird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18319DC4F9156E3152F7E878 /* Pods_The_Little_Bird.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18319DC4F9156E3152F7E878 /* Pods_The_Little_Bird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Little_Bird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC634315603631417F68B52 /* Pods_The_Little_BirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Little_BirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A03B51D151E0400436825 /* The Little Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Little Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A03B81D151E0400436825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327A03BA1D151E0400436825 /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
@@ -53,10 +58,17 @@
 		327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Little_BirdUITests.swift; sourceTree = "<group>"; };
 		327A03DA1D151E0400436825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		327A04011D15228100436825 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
-		327A04031D1522A300436825 /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterAuthViewController.swift; path = ../TwitterAuthViewController.swift; sourceTree = "<group>"; };
 		327A04051D1522C300436825 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 		327A04071D1522CE00436825 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
 		327A04091D1522D900436825 /* TwitterConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConvenience.swift; sourceTree = "<group>"; };
+		32F3EDF61D15EFDA0049CDCB /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAuthViewController.swift; sourceTree = "<group>"; };
+		5102859133E53F080F465FFD /* Pods-The Little BirdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Little BirdUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Little BirdUITests/Pods-The Little BirdUITests.release.xcconfig"; sourceTree = "<group>"; };
+		524D351B1D1B1252723D5C76 /* Pods-The Little Bird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Little Bird.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Little Bird/Pods-The Little Bird.debug.xcconfig"; sourceTree = "<group>"; };
+		61E6247B93C357AE41095698 /* Pods_The_Little_BirdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Little_BirdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1E96C0160BCAD5DEFF26F4 /* Pods-The Little Bird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Little Bird.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Little Bird/Pods-The Little Bird.release.xcconfig"; sourceTree = "<group>"; };
+		CB0B9559B31FC310BD2580EE /* Pods-The Little BirdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Little BirdTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Little BirdTests/Pods-The Little BirdTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F30CD5063641065C2C76A4E9 /* Pods-The Little BirdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Little BirdTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Little BirdTests/Pods-The Little BirdTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB291549643F0B6CA8E6159E /* Pods-The Little BirdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Little BirdUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Little BirdUITests/Pods-The Little BirdUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD80CB544C4BCB3E75A63053 /* Pods_The_Little_Bird.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53483C5D5BC6C0FB76FB1A2A /* Pods_The_Little_BirdTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB15376AD2A8270DCD5E78D /* Pods_The_Little_BirdUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0101EB90355897C8E27D5F02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				524D351B1D1B1252723D5C76 /* Pods-The Little Bird.debug.xcconfig */,
+				BF1E96C0160BCAD5DEFF26F4 /* Pods-The Little Bird.release.xcconfig */,
+				CB0B9559B31FC310BD2580EE /* Pods-The Little BirdTests.debug.xcconfig */,
+				F30CD5063641065C2C76A4E9 /* Pods-The Little BirdTests.release.xcconfig */,
+				FB291549643F0B6CA8E6159E /* Pods-The Little BirdUITests.debug.xcconfig */,
+				5102859133E53F080F465FFD /* Pods-The Little BirdUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		327A03AC1D151E0300436825 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +119,8 @@
 				327A03CC1D151E0400436825 /* The Little BirdTests */,
 				327A03D71D151E0400436825 /* The Little BirdUITests */,
 				327A03B61D151E0400436825 /* Products */,
+				0101EB90355897C8E27D5F02 /* Pods */,
+				E8D00E994C5C265B59F74F2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +143,6 @@
 				327A03F61D151EBC00436825 /* Controller */,
 				327A03F41D151E7E00436825 /* Assets */,
 				327A03F51D151E9800436825 /* Supporting Files */,
-				327A04001D151FC800436825 /* Frameworks */,
 			);
 			path = "The Little Bird";
 			sourceTree = "<group>";
@@ -139,7 +168,7 @@
 		327A03EE1D151E3300436825 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				327A04031D1522A300436825 /* TwitterAuthViewController.swift */,
+				32F3EDF61D15EFDA0049CDCB /* TwitterAuthViewController.swift */,
 				327A04051D1522C300436825 /* TwitterClient.swift */,
 				327A04071D1522CE00436825 /* TwitterConstants.swift */,
 				327A04091D1522D900436825 /* TwitterConvenience.swift */,
@@ -197,9 +226,12 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		327A04001D151FC800436825 /* Frameworks */ = {
+		E8D00E994C5C265B59F74F2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18319DC4F9156E3152F7E878 /* Pods_The_Little_Bird.framework */,
+				1BC634315603631417F68B52 /* Pods_The_Little_BirdTests.framework */,
+				61E6247B93C357AE41095698 /* Pods_The_Little_BirdUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,10 +243,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 327A03DD1D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little Bird" */;
 			buildPhases = (
+				B779FA05E37208EF5EFB968D /* [CP] Check Pods Manifest.lock */,
 				327A03B11D151E0400436825 /* Sources */,
 				327A03B21D151E0400436825 /* Frameworks */,
 				327A03B31D151E0400436825 /* Resources */,
 				327A03F71D151F9D00436825 /* ShellScript */,
+				F83B151CD2BEA317C8585D90 /* [CP] Embed Pods Frameworks */,
+				137A11DB7D791941F586DCC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 327A03E01D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdTests" */;
 			buildPhases = (
+				38795F227ED98C5079C38E05 /* [CP] Check Pods Manifest.lock */,
 				327A03C51D151E0400436825 /* Sources */,
 				327A03C61D151E0400436825 /* Frameworks */,
 				327A03C71D151E0400436825 /* Resources */,
+				D73169A6C14F3C73D3B2B15B /* [CP] Embed Pods Frameworks */,
+				D5913C1681381D50A0A6800A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 327A03E31D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdUITests" */;
 			buildPhases = (
+				B6F4683DDBE3F5DA095F3DB3 /* [CP] Check Pods Manifest.lock */,
 				327A03D01D151E0400436825 /* Sources */,
 				327A03D11D151E0400436825 /* Frameworks */,
 				327A03D21D151E0400436825 /* Resources */,
+				866D6B5470EA54A60BF0746D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +375,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		137A11DB7D791941F586DCC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Little Bird/Pods-The Little Bird-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		327A03F71D151F9D00436825 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -346,7 +401,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 9a578135e38115b991cf31eaac63dfbc6201a63d bf3442fd042870f59d92f7425b8c8573ee3bc3e241938b8c5fb3bd71125110f3";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9a578135e38115b991cf31eaac63dfbc6201a63d bf3442fd042870f59d92f7425b8c8573ee3bc3e241938b8c5fb3bd71125110f3";
+		};
+		38795F227ED98C5079C38E05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		866D6B5470EA54A60BF0746D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Little BirdUITests/Pods-The Little BirdUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F4683DDBE3F5DA095F3DB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B779FA05E37208EF5EFB968D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5913C1681381D50A0A6800A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Little BirdTests/Pods-The Little BirdTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73169A6C14F3C73D3B2B15B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Little BirdTests/Pods-The Little BirdTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83B151CD2BEA317C8585D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Little Bird/Pods-The Little Bird-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -361,7 +521,7 @@
 				327A04061D1522C300436825 /* TwitterClient.swift in Sources */,
 				327A040A1D1522D900436825 /* TwitterConvenience.swift in Sources */,
 				327A04021D15228100436825 /* BorderedButton.swift in Sources */,
-				327A04041D1522A300436825 /* TwitterAuthViewController.swift in Sources */,
+				32F3EDF71D15EFDA0049CDCB /* TwitterAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +661,7 @@
 		};
 		327A03DE1D151E0400436825 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524D351B1D1B1252723D5C76 /* Pods-The Little Bird.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -516,6 +677,7 @@
 		};
 		327A03DF1D151E0400436825 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1E96C0160BCAD5DEFF26F4 /* Pods-The Little Bird.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -532,6 +694,7 @@
 		};
 		327A03E11D151E0400436825 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0B9559B31FC310BD2580EE /* Pods-The Little BirdTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "The Little BirdTests/Info.plist";
@@ -544,6 +707,7 @@
 		};
 		327A03E21D151E0400436825 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30CD5063641065C2C76A4E9 /* Pods-The Little BirdTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "The Little BirdTests/Info.plist";
@@ -556,6 +720,7 @@
 		};
 		327A03E41D151E0400436825 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB291549643F0B6CA8E6159E /* Pods-The Little BirdUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "The Little BirdUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -567,6 +732,7 @@
 		};
 		327A03E51D151E0400436825 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5102859133E53F080F465FFD /* Pods-The Little BirdUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "The Little BirdUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
