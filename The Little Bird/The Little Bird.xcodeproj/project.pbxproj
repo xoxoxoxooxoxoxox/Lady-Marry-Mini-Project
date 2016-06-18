@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		327A03B91D151E0400436825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03B81D151E0400436825 /* AppDelegate.swift */; };
-		327A03BB1D151E0400436825 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03BA1D151E0400436825 /* LoginViewController.swift */; };
+		327A03BB1D151E0400436825 /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03BA1D151E0400436825 /* TwitterLoginViewController.swift */; };
 		327A03BE1D151E0400436825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A03BC1D151E0400436825 /* Main.storyboard */; };
 		327A03C01D151E0400436825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327A03BF1D151E0400436825 /* Assets.xcassets */; };
 		327A03C31D151E0400436825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A03C11D151E0400436825 /* LaunchScreen.storyboard */; };
 		327A03CE1D151E0400436825 /* The_Little_BirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03CD1D151E0400436825 /* The_Little_BirdTests.swift */; };
 		327A03D91D151E0400436825 /* The_Little_BirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */; };
-		327A03EA1D151E2A00436825 /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E61D151E2A00436825 /* TwitterAuthViewController.swift */; };
-		327A03EB1D151E2A00436825 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E71D151E2A00436825 /* TwitterClient.swift */; };
-		327A03EC1D151E2A00436825 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E81D151E2A00436825 /* TwitterConstants.swift */; };
-		327A03ED1D151E2A00436825 /* TwitterConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03E91D151E2A00436825 /* TwitterConvenience.swift */; };
-		327A03F21D151E5F00436825 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03F11D151E5F00436825 /* BorderedButton.swift */; };
 		327A03FC1D151FBF00436825 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327A03F81D151FBF00436825 /* Fabric.framework */; };
 		327A03FD1D151FBF00436825 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327A03F91D151FBF00436825 /* TwitterKit.framework */; };
 		327A03FE1D151FBF00436825 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 327A03FA1D151FBF00436825 /* TwitterKitResources.bundle */; };
 		327A03FF1D151FBF00436825 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327A03FB1D151FBF00436825 /* TwitterCore.framework */; };
+		327A04021D15228100436825 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04011D15228100436825 /* BorderedButton.swift */; };
+		327A04041D1522A300436825 /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04031D1522A300436825 /* TwitterAuthViewController.swift */; };
+		327A04061D1522C300436825 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04051D1522C300436825 /* TwitterClient.swift */; };
+		327A04081D1522CE00436825 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04071D1522CE00436825 /* TwitterConstants.swift */; };
+		327A040A1D1522D900436825 /* TwitterConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04091D1522D900436825 /* TwitterConvenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		327A03B51D151E0400436825 /* The Little Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Little Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A03B81D151E0400436825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		327A03BA1D151E0400436825 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		327A03BA1D151E0400436825 /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
 		327A03BD1D151E0400436825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		327A03BF1D151E0400436825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327A03C21D151E0400436825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,15 @@
 		327A03D41D151E0400436825 /* The Little BirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Little BirdUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A03D81D151E0400436825 /* The_Little_BirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Little_BirdUITests.swift; sourceTree = "<group>"; };
 		327A03DA1D151E0400436825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		327A03E61D151E2A00436825 /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterAuthViewController.swift; path = ../../littleBird/littleBird/TwitterAuthViewController.swift; sourceTree = "<group>"; };
-		327A03E71D151E2A00436825 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterClient.swift; path = ../../littleBird/littleBird/TwitterClient.swift; sourceTree = "<group>"; };
-		327A03E81D151E2A00436825 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterConstants.swift; path = ../../littleBird/littleBird/TwitterConstants.swift; sourceTree = "<group>"; };
-		327A03E91D151E2A00436825 /* TwitterConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterConvenience.swift; path = ../../littleBird/littleBird/TwitterConvenience.swift; sourceTree = "<group>"; };
-		327A03F11D151E5F00436825 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderedButton.swift; path = ../../littleBird/littleBird/BorderedButton.swift; sourceTree = "<group>"; };
 		327A03F81D151FBF00436825 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		327A03F91D151FBF00436825 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
 		327A03FA1D151FBF00436825 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
 		327A03FB1D151FBF00436825 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		327A04011D15228100436825 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		327A04031D1522A300436825 /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterAuthViewController.swift; path = ../TwitterAuthViewController.swift; sourceTree = "<group>"; };
+		327A04051D1522C300436825 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		327A04071D1522CE00436825 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
+		327A04091D1522D900436825 /* TwitterConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConvenience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +150,10 @@
 		327A03EE1D151E3300436825 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				327A03E61D151E2A00436825 /* TwitterAuthViewController.swift */,
-				327A03E71D151E2A00436825 /* TwitterClient.swift */,
-				327A03E81D151E2A00436825 /* TwitterConstants.swift */,
-				327A03E91D151E2A00436825 /* TwitterConvenience.swift */,
+				327A04031D1522A300436825 /* TwitterAuthViewController.swift */,
+				327A04051D1522C300436825 /* TwitterClient.swift */,
+				327A04071D1522CE00436825 /* TwitterConstants.swift */,
+				327A04091D1522D900436825 /* TwitterConvenience.swift */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 		327A03F31D151E6800436825 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				327A03F11D151E5F00436825 /* BorderedButton.swift */,
+				327A04011D15228100436825 /* BorderedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 		327A03F61D151EBC00436825 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				327A03BA1D151E0400436825 /* LoginViewController.swift */,
+				327A03BA1D151E0400436825 /* TwitterLoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -371,13 +371,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327A03EC1D151E2A00436825 /* TwitterConstants.swift in Sources */,
-				327A03ED1D151E2A00436825 /* TwitterConvenience.swift in Sources */,
-				327A03EB1D151E2A00436825 /* TwitterClient.swift in Sources */,
-				327A03EA1D151E2A00436825 /* TwitterAuthViewController.swift in Sources */,
-				327A03BB1D151E0400436825 /* LoginViewController.swift in Sources */,
+				327A04081D1522CE00436825 /* TwitterConstants.swift in Sources */,
+				327A03BB1D151E0400436825 /* TwitterLoginViewController.swift in Sources */,
 				327A03B91D151E0400436825 /* AppDelegate.swift in Sources */,
-				327A03F21D151E5F00436825 /* BorderedButton.swift in Sources */,
+				327A04061D1522C300436825 /* TwitterClient.swift in Sources */,
+				327A040A1D1522D900436825 /* TwitterConvenience.swift in Sources */,
+				327A04021D15228100436825 /* BorderedButton.swift in Sources */,
+				327A04041D1522A300436825 /* TwitterAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CHIN-CHWEN-TIEN.The-Little-Bird";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -610,6 +611,7 @@
 				327A03DF1D151E0400436825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		327A03E01D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdTests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +620,7 @@
 				327A03E21D151E0400436825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		327A03E31D151E0400436825 /* Build configuration list for PBXNativeTarget "The Little BirdUITests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +629,7 @@
 				327A03E51D151E0400436825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

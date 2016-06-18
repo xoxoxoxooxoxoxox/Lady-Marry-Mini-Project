@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Twitter Login View Controller-->
         <scene sceneID="HsN-zK-V5b">
             <objects>
-                <viewController id="OMo-pa-L3w" customClass="LoginViewController" customModule="littleBird" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OMo-pa-L3w" customClass="TwitterLoginViewController" customModule="The_Little_Bird" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KWg-4H-fqh"/>
                         <viewControllerLayoutGuide type="bottom" id="mDH-Pr-rsD"/>
@@ -19,16 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-GO-r5g">
-                                <rect key="frame" x="20" y="80" width="560" height="505"/>
+                                <rect key="frame" x="60" y="80" width="480" height="505"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="awL-aG-Cbh">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="pPT-oR-I4s"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Little Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3al-Yb-IsO">
-                                        <rect key="frame" x="0.0" y="150" width="560" height="55"/>
+                                        <rect key="frame" x="0.0" y="150" width="480" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="fdM-tA-uMy"/>
                                         </constraints>
@@ -36,10 +36,10 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stT-B2-Lkr" customClass="BorderedButton" customModule="littleBird" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="205" width="560" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stT-B2-Lkr" customClass="BorderedButton" customModule="The_Little_Bird" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="205" width="480" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="p72-DK-DPt"/>
+                                            <constraint firstAttribute="height" constant="44" id="fuD-YQ-jxA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -51,7 +51,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7x-iv-6G6">
-                                        <rect key="frame" x="0.0" y="249" width="560" height="256"/>
+                                        <rect key="frame" x="0.0" y="249" width="480" height="256"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -62,9 +62,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mDH-Pr-rsD" firstAttribute="top" secondItem="yhm-GO-r5g" secondAttribute="bottom" constant="15" id="6Nx-yo-Cqp"/>
-                            <constraint firstItem="yhm-GO-r5g" firstAttribute="leading" secondItem="6s5-sp-Rsd" secondAttribute="leadingMargin" id="Ioj-kQ-u3Y"/>
+                            <constraint firstItem="yhm-GO-r5g" firstAttribute="leading" secondItem="6s5-sp-Rsd" secondAttribute="leadingMargin" constant="40" id="Ioj-kQ-u3Y"/>
                             <constraint firstItem="yhm-GO-r5g" firstAttribute="top" secondItem="KWg-4H-fqh" secondAttribute="bottom" constant="60" id="jhG-IU-BrE"/>
-                            <constraint firstItem="yhm-GO-r5g" firstAttribute="trailing" secondItem="6s5-sp-Rsd" secondAttribute="trailingMargin" id="m3K-fd-6Ra"/>
+                            <constraint firstItem="yhm-GO-r5g" firstAttribute="trailing" secondItem="6s5-sp-Rsd" secondAttribute="trailingMargin" constant="-40" id="m3K-fd-6Ra"/>
                         </constraints>
                     </view>
                     <connections>
@@ -74,40 +74,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMK-vC-ef8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="349"/>
+            <point key="canvasLocation" x="-135" y="277"/>
         </scene>
-        <!--Twitter Auth View Controller-->
-        <scene sceneID="jhZ-eJ-7pg">
+        <!--Tab Bar Controller-->
+        <scene sceneID="0ys-St-gqt">
             <objects>
-                <viewController storyboardIdentifier="TwitterAuthViewController" id="rxF-Ll-URW" customClass="TwitterAuthViewController" customModule="littleBird" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TwitterTabBarController" id="Erh-it-cr6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9SW-Db-dTt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fW7-76-qmk" kind="relationship" relationship="viewControllers" id="6nH-pP-v4h"/>
+                        <segue destination="aQU-W4-DdG" kind="relationship" relationship="viewControllers" id="lSY-pz-cUf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3V-2v-s9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="277"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Z7X-xc-yYt">
+            <objects>
+                <viewController id="fW7-76-qmk" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1f8-f0-nrf"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZSe-3O-IsX"/>
+                        <viewControllerLayoutGuide type="top" id="i33-Lt-Hvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="MqM-8c-Qy2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wAR-bc-hfN">
+                    <view key="view" contentMode="scaleToFill" id="Gyo-qf-MCi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OO4-pr-674">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4YD-fh-NAk">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cfi-1B-RRq">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cfi-1B-RRq" id="tNT-nK-2LN">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BEs-yZ-0I6">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OO4-pr-674" firstAttribute="top" secondItem="wAR-bc-hfN" secondAttribute="top" id="QDE-VH-Wq9"/>
-                            <constraint firstAttribute="trailing" secondItem="OO4-pr-674" secondAttribute="trailing" id="Tbr-Nl-t78"/>
-                            <constraint firstItem="ZSe-3O-IsX" firstAttribute="top" secondItem="OO4-pr-674" secondAttribute="bottom" id="qgt-Vc-UhK"/>
-                            <constraint firstItem="OO4-pr-674" firstAttribute="leading" secondItem="wAR-bc-hfN" secondAttribute="leading" id="zWm-nd-MdR"/>
+                            <constraint firstItem="BEs-yZ-0I6" firstAttribute="top" secondItem="i33-Lt-Hvb" secondAttribute="bottom" id="CrL-jW-YAf"/>
+                            <constraint firstItem="MqM-8c-Qy2" firstAttribute="top" secondItem="4YD-fh-NAk" secondAttribute="bottom" id="Ivp-WM-ZYZ"/>
+                            <constraint firstItem="4YD-fh-NAk" firstAttribute="top" secondItem="BEs-yZ-0I6" secondAttribute="bottom" id="K1g-Rs-FxU"/>
+                            <constraint firstAttribute="trailing" secondItem="BEs-yZ-0I6" secondAttribute="trailing" id="VES-Bh-pbV"/>
+                            <constraint firstAttribute="trailing" secondItem="4YD-fh-NAk" secondAttribute="trailing" id="XCz-FE-5qS"/>
+                            <constraint firstItem="4YD-fh-NAk" firstAttribute="leading" secondItem="Gyo-qf-MCi" secondAttribute="leading" id="eiI-iA-eWP"/>
+                            <constraint firstItem="BEs-yZ-0I6" firstAttribute="leading" secondItem="Gyo-qf-MCi" secondAttribute="leading" id="rsh-0X-4jx"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="OO4-pr-674" id="7va-4p-Fhb"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Item" id="Wfe-ph-spg"/>
+                    <navigationItem key="navigationItem" id="uCL-r1-mw1"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cUz-KQ-BIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NpA-Vo-ZdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="1052"/>
+            <point key="canvasLocation" x="1575" y="-95"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="LGV-H7-JAF">
+            <objects>
+                <viewController id="aQU-W4-DdG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gwv-8R-8Fe"/>
+                        <viewControllerLayoutGuide type="bottom" id="nko-Pq-QWE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lOE-ej-esY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="YSY-Xs-gaf"/>
+                    <navigationItem key="navigationItem" id="3a0-WK-SR5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vky-dy-V6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="763"/>
         </scene>
     </scenes>
     <resources>
