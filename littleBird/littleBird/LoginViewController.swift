@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import TwitterKit
 
 class LoginViewController: UIViewController {
 
     // MARK: Properties
     @IBOutlet weak var debugTextLabel: UILabel!
-    
+    @IBOutlet weak var loginButton: BorderedButton!
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -26,24 +25,16 @@ class LoginViewController: UIViewController {
         super.viewWillAppear(animated)
         
         debugTextLabel.text = ""
-        
-        let loginButton = TWTRLogInButton { (session, error) in
-            if let unwrappedSession = session {
-                let alert = UIAlertController(title: "Logged In",
-                    message: "User \(unwrappedSession.userName) has logged in",
-                    preferredStyle: UIAlertControllerStyle.Alert
-                )
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
-            } else {
-                NSLog("Login error: %@", error!.localizedDescription);
-            }
-        }
-        
-        // TODO: Change where the log in button is positioned in your view
-        loginButton.center = self.view.center
-        self.view.addSubview(loginButton)
     }
+    
+    // MARK: Action
+    @IBAction func loginPressed(sender: AnyObject) {
+        print("login Pressed")
+    }
+    
+    
+    // MARK: Login
+
 
 }
 
