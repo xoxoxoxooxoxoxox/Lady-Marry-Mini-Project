@@ -8,6 +8,7 @@
 
 import UIKit
 import TwitterKit
+import STTwitter
 
 class TwitterLoginViewController: UIViewController {
     
@@ -19,6 +20,7 @@ class TwitterLoginViewController: UIViewController {
     override func viewDidLoad() {
         print("TwitterLoginViewController viewDidLoad Called")
         super.viewDidLoad()
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -26,22 +28,11 @@ class TwitterLoginViewController: UIViewController {
         super.viewWillAppear(animated)
         
         debugTextLabel.text = ""
-        let session = Twitter.sharedInstance().sessionStore.session() as TWTRAuthSession?
-        if session != nil {
-            completeLogin()
-        }
     }
     
     // MARK: Action
     @IBAction func loginPressed(sender: AnyObject) {
         print("login Pressed")
-        Twitter.sharedInstance().logInWithCompletion { session, error in
-            if session != nil {
-                print("signed in as \(session!.userName)")
-            } else {
-                print("error: \(error!.localizedDescription)")
-            }
-        }
     }
     
     // MARK: Login

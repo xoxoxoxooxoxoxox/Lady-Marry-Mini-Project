@@ -15,6 +15,7 @@ extension TwitterClient {
         
         // MARK: Consumer Key
         static let ConsumerKey = "Bmctm0QNkR9QmcGNZRbUsemYv"
+        static let ConsumerSecret = "UkS9IP7pXw7rrTLI9nrHV3p3vLASK6pwwHhDt6GPyGpnk3ys7H"
         
         // MARK: URLs
         static let ApiScheme = "https"

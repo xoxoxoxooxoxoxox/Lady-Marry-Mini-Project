@@ -21,3 +21,4 @@ end
 
 pod 'Fabric'
 pod 'TwitterKit'
+pod 'STTwitter'

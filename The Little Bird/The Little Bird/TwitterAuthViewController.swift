@@ -22,7 +22,7 @@ class TwitterAuthViewController: UIViewController {
         print("TwitterAuthViewController viewDidLoad Called")
         super.viewDidLoad()
         
-        navigationItem.title = "Authentication"
+        navigationItem.title = "Twitter"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: #selector(cancelAuth))
     }
     

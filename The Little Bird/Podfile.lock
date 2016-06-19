@@ -1,5 +1,6 @@
 PODS:
   - Fabric (1.6.7)
+  - STTwitter (0.2.4)
   - TwitterCore (2.2.0):
     - Fabric
   - TwitterKit (2.2.0):
@@ -7,13 +8,15 @@ PODS:
 
 DEPENDENCIES:
   - Fabric
+  - STTwitter
   - TwitterKit
 
 SPEC CHECKSUMS:
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  STTwitter: a82de278afbd4191d0a07f4f3ffd8f1fb8404da0
   TwitterCore: 115527630bb2986954adc928b8c895a92bcd57e5
   TwitterKit: 2c64ec342a6261ae6bab565bad85dcbbfd3888b7
 
-PODFILE CHECKSUM: 880c4303d83e2cf899312893ed1f3c88eea6a1f1
+PODFILE CHECKSUM: b36a238aefd5366d2bdd72ce47981e127787ebb4
 
 COCOAPODS: 1.0.1
