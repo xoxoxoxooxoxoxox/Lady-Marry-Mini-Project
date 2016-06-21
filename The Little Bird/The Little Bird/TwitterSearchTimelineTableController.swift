@@ -32,7 +32,7 @@ class TwitterSearchTimelineTableController: UIViewController {
     // MARK: Streaming
     private func fetchStreamTweets() {
         print("fetchStreamTweets Called")
-        let request = client.streaming("https://userstream.twitter.com/1.1/user.json").progress { (data) in
+        let request = client.streaming("https://userstream.twitter.com/1.1/user.json", parameters: ["track":"NBA"]).progress { (data) in
             let json = JSON(data: data)
             print(json)
         }.completion { (responseData, response, error) in
