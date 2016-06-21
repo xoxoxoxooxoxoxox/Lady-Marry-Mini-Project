@@ -1,7 +1,12 @@
 PODS:
   - Fabric (1.6.7)
+  - MutableDataScanner (1.0.7)
   - OAuthSwift (0.5.2)
   - STTwitter (0.2.4)
+  - SwiftyJSON (2.3.2)
+  - TwitterAPI (0.1.0):
+    - MutableDataScanner
+    - OAuthSwift
   - TwitterCore (2.2.0):
     - Fabric
   - TwitterKit (2.2.0):
@@ -9,18 +14,23 @@ PODS:
 
 DEPENDENCIES:
   - Fabric
-  - OAuthSwift (~> 0.5)
+  - OAuthSwift (~> 0.5.2)
   - STTwitter
+  - SwiftyJSON
+  - TwitterAPI
   - TwitterCore
   - TwitterKit
 
 SPEC CHECKSUMS:
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  MutableDataScanner: bba5d238d7191f0e567c695f833c5d6cebcc093d
   OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
   STTwitter: a82de278afbd4191d0a07f4f3ffd8f1fb8404da0
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TwitterAPI: adc61bdf90fde855e84c1bc67223c5877f22b464
   TwitterCore: 115527630bb2986954adc928b8c895a92bcd57e5
   TwitterKit: 2c64ec342a6261ae6bab565bad85dcbbfd3888b7
 
-PODFILE CHECKSUM: 8100ce30356975d9501ad65cbc8e748d80e0e232
+PODFILE CHECKSUM: 2cb964751f74216c5d17b582af52da0b8ddf5ea9
 
 COCOAPODS: 1.0.1

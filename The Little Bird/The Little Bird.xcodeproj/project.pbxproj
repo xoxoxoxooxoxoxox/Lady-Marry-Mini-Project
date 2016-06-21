@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321492451D1933D200A25045 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321492411D19331000A25045 /* SwiftyJSON.framework */; };
 		327A03B91D151E0400436825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03B81D151E0400436825 /* AppDelegate.swift */; };
 		327A03BB1D151E0400436825 /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A03BA1D151E0400436825 /* TwitterLoginViewController.swift */; };
 		327A03BE1D151E0400436825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A03BC1D151E0400436825 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		18319DC4F9156E3152F7E878 /* Pods_The_Little_Bird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Little_Bird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC634315603631417F68B52 /* Pods_The_Little_BirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Little_BirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		321492411D19331000A25045 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/The_Little_Bird-egemsgdcjjgmrxcttmqerlycrkhu/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		321492431D19331B00A25045 /* STTwitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STTwitter.framework; path = "../../../Library/Developer/Xcode/DerivedData/The_Little_Bird-egemsgdcjjgmrxcttmqerlycrkhu/Build/Products/Debug-iphonesimulator/STTwitter/STTwitter.framework"; sourceTree = "<group>"; };
 		327A03B51D151E0400436825 /* The Little Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Little Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A03B81D151E0400436825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327A03BA1D151E0400436825 /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321492451D1933D200A25045 /* SwiftyJSON.framework in Frameworks */,
 				AD80CB544C4BCB3E75A63053 /* Pods_The_Little_Bird.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +232,8 @@
 		E8D00E994C5C265B59F74F2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				321492431D19331B00A25045 /* STTwitter.framework */,
+				321492411D19331000A25045 /* SwiftyJSON.framework */,
 				18319DC4F9156E3152F7E878 /* Pods_The_Little_Bird.framework */,
 				1BC634315603631417F68B52 /* Pods_The_Little_BirdTests.framework */,
 				61E6247B93C357AE41095698 /* Pods_The_Little_BirdUITests.framework */,

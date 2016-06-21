@@ -8,13 +8,14 @@
 
 import UIKit
 import TwitterKit
-import STTwitter
 import OAuthSwift
+import TwitterAPI
+import SwiftyJSON
 
 class TwitterSearchTimelineTableController: UIViewController {
     
     // MARK: Properties
-    var oauthSwift: OAuth1Swift!
+    var client: OAuthClient!
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -31,13 +32,15 @@ class TwitterSearchTimelineTableController: UIViewController {
     // MARK: Streaming
     private func fetchStreamTweets() {
         print("fetchStreamTweets Called")
-        let url = "https://userstream.twitter.com/1.1/user.json"
-        oauthSwift.client.get(url, parameters: ["track": "NBA"], success: { (data, response) in
-            let jsonDict: AnyObject! = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
-            print(jsonDict)
-            }) { (error) in
-                print(error)
-        }
+        let request = client.streaming("https://userstream.twitter.com/1.1/user.json").progress { (data) in
+            let json = JSON(data: data)
+            print(json)
+        }.completion { (responseData, response, error) in
+            guard error == nil else {
+//                print(error)
+                return
+            }
+        }.start()
     }
     
     // MARK: Sign out

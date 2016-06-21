@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A2FC0C69FAC756FEB60E11356CF084AB'
-               BlueprintName = 'STTwitter'
+               BlueprintIdentifier = 'ECB0B444163DFEBEDDF4D164F907764B'
+               BlueprintName = 'MutableDataScanner'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'STTwitter.framework'>
+               BuildableName = 'MutableDataScanner.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

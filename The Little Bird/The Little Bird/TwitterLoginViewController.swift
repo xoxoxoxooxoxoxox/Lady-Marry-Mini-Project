@@ -7,22 +7,17 @@
 //
 
 import UIKit
-import STTwitter
 import TwitterKit
 import OAuthSwift
+import TwitterAPI
 
 class TwitterLoginViewController: UIViewController {
     
     // MARK: Properties
     @IBOutlet weak var debugTextLabel: UILabel!
     @IBOutlet weak var loginButton: BorderedButton!
-    let oauthswift = OAuth1Swift(
-        consumerKey:    "Bmctm0QNkR9QmcGNZRbUsemYv",
-        consumerSecret: "UkS9IP7pXw7rrTLI9nrHV3p3vLASK6pwwHhDt6GPyGpnk3ys7H",
-        requestTokenUrl: "https://api.twitter.com/oauth/request_token",
-        authorizeUrl:    "https://api.twitter.com/oauth/authorize",
-        accessTokenUrl:  "https://api.twitter.com/oauth/access_token"
-    )
+    var accessToken: String? = nil
+    var accessTokenSecret: String? = nil
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -40,13 +35,18 @@ class TwitterLoginViewController: UIViewController {
     // MARK: Action
     @IBAction func loginPressed(sender: AnyObject) {
         print("loginButton Pressed")
+        let oauthswift = OAuth1Swift(
+            consumerKey:    TwitterClient.Constants.ConsumerKey,
+            consumerSecret: TwitterClient.Constants.ConsumerSecret,
+            requestTokenUrl: "https://api.twitter.com/oauth/request_token",
+            authorizeUrl:    "https://api.twitter.com/oauth/authorize",
+            accessTokenUrl:  "https://api.twitter.com/oauth/access_token"
+        )
         oauthswift.authorizeWithCallbackURL(
             NSURL(string: "The-Little-Bird://oauth-callback/twitter")!,
             success: { credential, response, parameters in
-                print(credential.oauth_token)
-                print(credential.oauth_token_secret)
-                print(parameters["user_id"])
-                print(parameters)
+                self.accessToken = credential.oauth_token
+                self.accessTokenSecret = credential.oauth_token_secret
                 self.completeLogin()
             },
             failure: { error in
@@ -64,7 +64,12 @@ class TwitterLoginViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SignInCompleted" {
             if let controller = segue.destinationViewController as? TwitterSearchTimelineTableController {
-                controller.oauthSwift = self.oauthswift
+                let client = OAuthClient(
+                    consumerKey: TwitterClient.Constants.ConsumerKey,
+                    consumerSecret: TwitterClient.Constants.ConsumerSecret,
+                    accessToken: accessToken!,
+                    accessTokenSecret: accessTokenSecret!)
+                controller.client = client
             }
         }
     }
