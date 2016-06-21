@@ -13,8 +13,15 @@ import Foundation
 class TwitterClient: NSObject {
     
     // MARK: Properties
+    
     // shared session
     var session = NSURLSession.sharedSession()
+    
+    // authentication state
+    var oauth_token: String? = nil
+    var oauth_token_secret: String? = nil
+    var screen_name: String? = nil
+    var user_id: Int? = nil
     
     // MARK: Initializers
     override init() {
@@ -37,5 +44,13 @@ class TwitterClient: NSObject {
         }
         
         return components.URL!
+    }
+    
+    // MARK: Shared Instance
+    class func sharedInstance() -> TwitterClient {
+        struct Singleton {
+            static var sharedInstance = TwitterClient()
+        }
+        return Singleton.sharedInstance
     }
 }

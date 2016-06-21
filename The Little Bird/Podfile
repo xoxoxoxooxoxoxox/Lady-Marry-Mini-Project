@@ -17,8 +17,10 @@ target 'The Little Bird' do
     # Pods for testing
   end
 
+  pod 'STTwitter'
+  pod 'Fabric'
+  pod 'TwitterKit'
+  pod 'TwitterCore'
+  pod 'OAuthSwift', '~> 0.5'
+  
 end
-
-pod 'Fabric'
-pod 'TwitterKit'
-pod 'STTwitter'

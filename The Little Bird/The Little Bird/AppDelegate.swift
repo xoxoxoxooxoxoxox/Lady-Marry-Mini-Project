@@ -7,18 +7,31 @@
 //
 
 import UIKit
+import STTwitter
 import Fabric
 import TwitterKit
-import STTwitter
+import OAuthSwift
+
+// MARK: handle callback url
+extension AppDelegate {
+    
+    func applicationHandleOpenURL(url: NSURL) {
+        if (url.host == "oauth-callback") {
+            OAuthSwift.handleOpenURL(url)
+        } else {
+            // Google provider is the only one wuth your.bundle.id url schema.
+            OAuthSwift.handleOpenURL(url)
+        }
+    }
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Twitter.sharedInstance().startWithConsumerKey("jHhrpne27UnPXdbAAIwivrL5i", consumerSecret: "Zj7vIIJK8uR3r21y3KlgxRuMiMnBCOVABZ8W04RAZsTJMug7yW")
         Fabric.with([Twitter.self])
         return true
     }
@@ -44,7 +57,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        applicationHandleOpenURL(url)
+        return true
+    }
 
 }
 

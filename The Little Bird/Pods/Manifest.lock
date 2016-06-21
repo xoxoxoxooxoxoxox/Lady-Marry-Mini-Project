@@ -1,5 +1,6 @@
 PODS:
   - Fabric (1.6.7)
+  - OAuthSwift (0.5.2)
   - STTwitter (0.2.4)
   - TwitterCore (2.2.0):
     - Fabric
@@ -8,15 +9,18 @@ PODS:
 
 DEPENDENCIES:
   - Fabric
+  - OAuthSwift (~> 0.5)
   - STTwitter
+  - TwitterCore
   - TwitterKit
 
 SPEC CHECKSUMS:
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
   STTwitter: a82de278afbd4191d0a07f4f3ffd8f1fb8404da0
   TwitterCore: 115527630bb2986954adc928b8c895a92bcd57e5
   TwitterKit: 2c64ec342a6261ae6bab565bad85dcbbfd3888b7
 
-PODFILE CHECKSUM: b36a238aefd5366d2bdd72ce47981e127787ebb4
+PODFILE CHECKSUM: 8100ce30356975d9501ad65cbc8e748d80e0e232
 
 COCOAPODS: 1.0.1
