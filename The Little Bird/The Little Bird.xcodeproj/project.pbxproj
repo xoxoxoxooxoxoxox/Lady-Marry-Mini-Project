@@ -18,6 +18,8 @@
 		327A04021D15228100436825 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04011D15228100436825 /* BorderedButton.swift */; };
 		327A04061D1522C300436825 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04051D1522C300436825 /* TwitterClient.swift */; };
 		327A04081D1522CE00436825 /* TwitterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A04071D1522CE00436825 /* TwitterConstants.swift */; };
+		32A4DDA61D1F4AA600B87744 /* TwitterTweetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4DDA51D1F4AA600B87744 /* TwitterTweetViewCell.swift */; };
+		32A4DDA81D1F59D400B87744 /* StreamTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4DDA71D1F59D400B87744 /* StreamTweets.swift */; };
 		32F3EDF91D15F4CF0049CDCB /* TwitterSearchTimelineTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3EDF81D15F4CF0049CDCB /* TwitterSearchTimelineTableController.swift */; };
 		53483C5D5BC6C0FB76FB1A2A /* Pods_The_Little_BirdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC634315603631417F68B52 /* Pods_The_Little_BirdTests.framework */; };
 		6BB15376AD2A8270DCD5E78D /* Pods_The_Little_BirdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E6247B93C357AE41095698 /* Pods_The_Little_BirdUITests.framework */; };
@@ -62,6 +64,8 @@
 		327A04011D15228100436825 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		327A04051D1522C300436825 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 		327A04071D1522CE00436825 /* TwitterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConstants.swift; sourceTree = "<group>"; };
+		32A4DDA51D1F4AA600B87744 /* TwitterTweetViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTweetViewCell.swift; sourceTree = "<group>"; };
+		32A4DDA71D1F59D400B87744 /* StreamTweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTweets.swift; sourceTree = "<group>"; };
 		32B58D291D171085006F9137 /* The Little Bird-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Little Bird-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		32F3EDF81D15F4CF0049CDCB /* TwitterSearchTimelineTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSearchTimelineTableController.swift; sourceTree = "<group>"; };
 		5102859133E53F080F465FFD /* Pods-The Little BirdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Little BirdUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Little BirdUITests/Pods-The Little BirdUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 		327A03EE1D151E3300436825 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				32A4DDA71D1F59D400B87744 /* StreamTweets.swift */,
 				327A04051D1522C300436825 /* TwitterClient.swift */,
 				327A04071D1522CE00436825 /* TwitterConstants.swift */,
 			);
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				327A04011D15228100436825 /* BorderedButton.swift */,
+				32A4DDA51D1F4AA600B87744 /* TwitterTweetViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -525,7 +531,9 @@
 				327A03B91D151E0400436825 /* AppDelegate.swift in Sources */,
 				327A04061D1522C300436825 /* TwitterClient.swift in Sources */,
 				32F3EDF91D15F4CF0049CDCB /* TwitterSearchTimelineTableController.swift in Sources */,
+				32A4DDA81D1F59D400B87744 /* StreamTweets.swift in Sources */,
 				327A04021D15228100436825 /* BorderedButton.swift in Sources */,
+				32A4DDA61D1F4AA600B87744 /* TwitterTweetViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

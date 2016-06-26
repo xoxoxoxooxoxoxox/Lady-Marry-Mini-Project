@@ -12,10 +12,15 @@ import OAuthSwift
 import TwitterAPI
 import SwiftyJSON
 
-class TwitterSearchTimelineTableController: UIViewController {
+class TwitterSearchTimelineTableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: Properties
+    @IBOutlet weak var timelineTable: UITableView!
     var client: OAuthClient!
+    var streamTweets: [StreamTweets] {
+        return (UIApplication.sharedApplication().delegate as! AppDelegate).streamTweets
+    }
+    
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -27,20 +32,49 @@ class TwitterSearchTimelineTableController: UIViewController {
         print("TwitterSearchTimelineTableController viewDidAppear Called")
         super.viewDidAppear(animated)
         fetchStreamTweets()
+        timelineTable?.delegate = self
+        timelineTable?.dataSource = self
+        timelineTable?.reloadData()
     }
     
     // MARK: Streaming
     private func fetchStreamTweets() {
         print("fetchStreamTweets Called")
-        let request = client.streaming("https://userstream.twitter.com/1.1/user.json", parameters: ["track":"NBA"]).progress { (data) in
-            let json = JSON(data: data)
-            print(json)
+        let _ = client.streaming("https://userstream.twitter.com/1.1/user.json", parameters: ["track":"LOOL1234"]).progress { (data) in
+            
+            // Retrieve data
+            let parsedResult = JSON(data: data)
+            guard let text = parsedResult["text"].string else {
+                print("Cannot find key 'text' in \(parsedResult)")
+                return
+            }
+            
+            print(text)
+            
+            // Add it to the streamTweets array in the Application Delegate
+            let object = UIApplication.sharedApplication().delegate
+            let appDelegate = object as! AppDelegate
+            appDelegate.streamTweets.append(StreamTweets(text: text))
+            
         }.completion { (responseData, response, error) in
             guard error == nil else {
-//                print(error)
+                print(error)
                 return
             }
         }.start()
+    }
+    
+    // MARK: Table View
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return streamTweets.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = self.timelineTable.dequeueReusableCellWithIdentifier("TweetCell", forIndexPath: indexPath) as! TwitterTweetViewCell
+        
+        cell.tweet.text = streamTweets[indexPath.row].text
+        
+        return cell
     }
     
     // MARK: Sign out
@@ -53,4 +87,5 @@ class TwitterSearchTimelineTableController: UIViewController {
         // Present the sign in again
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
 }
