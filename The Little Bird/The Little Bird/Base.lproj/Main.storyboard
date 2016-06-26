@@ -162,9 +162,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="HcQ-uo-uH4" id="geo-Pz-pdu"/>
-                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="Search Topic" translatesAutoresizingMaskIntoConstraints="NO" id="iZa-0B-Xco">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>

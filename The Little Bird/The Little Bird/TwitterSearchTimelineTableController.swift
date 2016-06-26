@@ -32,9 +32,9 @@ class TwitterSearchTimelineTableController: UIViewController, UITableViewDelegat
         print("TwitterSearchTimelineTableController viewDidAppear Called")
         super.viewDidAppear(animated)
         fetchStreamTweets()
-        timelineTable?.delegate = self
-        timelineTable?.dataSource = self
-        timelineTable?.reloadData()
+        timelineTable.delegate = self
+        timelineTable.dataSource = self
+        timelineTable.reloadData()
     }
     
     // MARK: Streaming
@@ -55,6 +55,7 @@ class TwitterSearchTimelineTableController: UIViewController, UITableViewDelegat
             let object = UIApplication.sharedApplication().delegate
             let appDelegate = object as! AppDelegate
             appDelegate.streamTweets.append(StreamTweets(text: text))
+            print("Tweets saved, streamTweets count:" + " \(appDelegate.streamTweets.count)")
             
         }.completion { (responseData, response, error) in
             guard error == nil else {
@@ -70,10 +71,12 @@ class TwitterSearchTimelineTableController: UIViewController, UITableViewDelegat
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.timelineTable.dequeueReusableCellWithIdentifier("TweetCell", forIndexPath: indexPath) as! TwitterTweetViewCell
-        
-        cell.tweet.text = streamTweets[indexPath.row].text
-        
+        let cell = timelineTable.dequeueReusableCellWithIdentifier("TweetCell", forIndexPath: indexPath) as! TwitterTweetViewCell
+        print("YEAH!")
+        let tweet = self.streamTweets[indexPath.row]
+        if streamTweets.count > 0 {
+            cell.tweet.text = tweet.text
+        }
         return cell
     }
     
