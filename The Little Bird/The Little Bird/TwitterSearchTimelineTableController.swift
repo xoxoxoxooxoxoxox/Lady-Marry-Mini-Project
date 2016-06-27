@@ -31,10 +31,9 @@ class TwitterSearchTimelineTableController: UIViewController, UITableViewDelegat
     override func viewDidAppear(animated: Bool) {
         print("TwitterSearchTimelineTableController viewDidAppear Called")
         super.viewDidAppear(animated)
-        fetchStreamTweets()
         timelineTable.delegate = self
         timelineTable.dataSource = self
-        timelineTable.reloadData()
+        fetchStreamTweets()
     }
     
     // MARK: Streaming
@@ -48,14 +47,15 @@ class TwitterSearchTimelineTableController: UIViewController, UITableViewDelegat
                 print("Cannot find key 'text' in \(parsedResult)")
                 return
             }
-            
-            print(text)
-            
+                        
             // Add it to the streamTweets array in the Application Delegate
             let object = UIApplication.sharedApplication().delegate
             let appDelegate = object as! AppDelegate
             appDelegate.streamTweets.append(StreamTweets(text: text))
             print("Tweets saved, streamTweets count:" + " \(appDelegate.streamTweets.count)")
+            print("Tweet: \(appDelegate.streamTweets.last!)")
+            
+            self.timelineTable.reloadData()
             
         }.completion { (responseData, response, error) in
             guard error == nil else {
@@ -75,7 +75,8 @@ class TwitterSearchTimelineTableController: UIViewController, UITableViewDelegat
         print("YEAH!")
         let tweet = self.streamTweets[indexPath.row]
         if streamTweets.count > 0 {
-            cell.tweet.text = tweet.text
+            cell.tweet?.text = "\(tweet.text)"
+            cell.tweet.sizeToFit()
         }
         return cell
     }
